@@ -10,6 +10,8 @@
 		2B1176912AF322FA00A66281 /* Date_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1176902AF322FA00A66281 /* Date_Extensions.swift */; };
 		2B1176932AF3231C00A66281 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1176922AF3231C00A66281 /* ViewExtensions.swift */; };
 		2B1176952AF3259C00A66281 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1176942AF3259C00A66281 /* MapModels.swift */; };
+		2B1176972AF4920D00A66281 /* BeantownButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1176962AF4920D00A66281 /* BeantownButtons.swift */; };
+		2B1176992AF49D6A00A66281 /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1176982AF49D6A00A66281 /* ItemInfoView.swift */; };
 		2B19F01B2AC6C14600263A4B /* FakeMobileMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19F01A2AC6C14600263A4B /* FakeMobileMacApp.swift */; };
 		2B19F01D2AC6C14600263A4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19F01C2AC6C14600263A4B /* ContentView.swift */; };
 		2B19F01F2AC6C14700263A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B19F01E2AC6C14700263A4B /* Assets.xcassets */; };
@@ -19,13 +21,14 @@
 		2B19F02E2AC6C1AB00263A4B /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19F02D2AC6C1AB00263A4B /* DeliveryView.swift */; };
 		2B19F0302AC6C1CA00263A4B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19F02F2AC6C1CA00263A4B /* MenuView.swift */; };
 		2B19F0322AC6C1EE00263A4B /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19F0312AC6C1EE00263A4B /* CouponView.swift */; };
-		2B80FDCA2AE3742700ED80AB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80FDC92AE3742700ED80AB /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B1176902AF322FA00A66281 /* Date_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_Extensions.swift; sourceTree = "<group>"; };
 		2B1176922AF3231C00A66281 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		2B1176942AF3259C00A66281 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		2B1176962AF4920D00A66281 /* BeantownButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeantownButtons.swift; sourceTree = "<group>"; };
+		2B1176982AF49D6A00A66281 /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
 		2B19F0172AC6C14600263A4B /* FakeMobileMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeMobileMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B19F01A2AC6C14600263A4B /* FakeMobileMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMobileMacApp.swift; sourceTree = "<group>"; };
 		2B19F01C2AC6C14600263A4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,7 +39,6 @@
 		2B19F02D2AC6C1AB00263A4B /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
 		2B19F02F2AC6C1CA00263A4B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2B19F0312AC6C1EE00263A4B /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
-		2B80FDC92AE3742700ED80AB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 				2B19F02F2AC6C1CA00263A4B /* MenuView.swift */,
 				2B19F02D2AC6C1AB00263A4B /* DeliveryView.swift */,
 				2B19F02B2AC6C18B00263A4B /* OrderView.swift */,
-				2B80FDC92AE3742700ED80AB /* HeaderView.swift */,
+				2B1176962AF4920D00A66281 /* BeantownButtons.swift */,
+				2B1176982AF49D6A00A66281 /* ItemInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1176912AF322FA00A66281 /* Date_Extensions.swift in Sources */,
+				2B1176972AF4920D00A66281 /* BeantownButtons.swift in Sources */,
 				2B19F02A2AC6C17D00263A4B /* HomeView.swift in Sources */,
 				2B19F0302AC6C1CA00263A4B /* MenuView.swift in Sources */,
 				2B19F02C2AC6C18B00263A4B /* OrderView.swift in Sources */,
@@ -188,8 +192,8 @@
 				2B19F0322AC6C1EE00263A4B /* CouponView.swift in Sources */,
 				2B19F02E2AC6C1AB00263A4B /* DeliveryView.swift in Sources */,
 				2B19F01B2AC6C14600263A4B /* FakeMobileMacApp.swift in Sources */,
+				2B1176992AF49D6A00A66281 /* ItemInfoView.swift in Sources */,
 				2B1176932AF3231C00A66281 /* ViewExtensions.swift in Sources */,
-				2B80FDCA2AE3742700ED80AB /* HeaderView.swift in Sources */,
 				2B1176952AF3259C00A66281 /* MapModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +332,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "現在地を表示します";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "現在地を取得します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,6 +363,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "現在地を表示します";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "現在地を取得します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
