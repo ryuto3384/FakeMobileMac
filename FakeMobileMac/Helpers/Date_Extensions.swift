@@ -56,7 +56,7 @@ extension Date {
         var week: [WeekDay] = []
         let weekForDate = calendar.dateInterval(of: .weekday, for: startOfDate)
         //print(weekForDate)
-        guard let startOfWeek = weekForDate? .start else {
+        guard (weekForDate? .start) != nil else {
             return []
         }
         
