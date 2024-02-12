@@ -15,6 +15,8 @@ struct MenuHeaderView: View {
     
     var body: some View {
         VStack(spacing: 15) {
+            
+            //ツールバー
             HStack {
                 
                 VStack{
@@ -38,7 +40,7 @@ struct MenuHeaderView: View {
                     .frame(width: 70)
             }
             
-            
+            //カテゴリー一覧
             ScrollViewReader { value in
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
@@ -64,15 +66,30 @@ struct MenuHeaderView: View {
                                 }
                             }
                             .onTapGesture {
-                                self.selectedCategory = category
                                 withAnimation {
+                                    self.selectedCategory = category
                                     value.scrollTo(category, anchor: .center)
                                 }
                             }
+                            
+                            
+                            
+                            
                         }
+                       
                     }
+                    
                 }
                 .frame(height: 25)
+                .onChange(of: selectedCategory) {
+                    withAnimation{
+                        print("変更された:\(selectedCategory)")
+                        value.scrollTo(selectedCategory, anchor: .center)
+                        print("完了")
+                    }
+                }
+                
+                
 
             }
             

@@ -35,29 +35,63 @@ struct MenuView: View {
                 
                 
                 GeometryReader { geometry in
-                    ScrollView(showsIndicators: false) {
-                        LazyVGrid(columns: gridItem, spacing: 10) {
-                            ForEach(0...20, id: \.self) { i in
+                    ScrollViewReader { value in
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            
+                            LazyHStack(spacing: 0) {
                                 
-                                Text("\(i)")
-                                    .frame(width: imageWidth, height: imageHeight)
+                                ForEach(categories, id: \.self) { category in
                                     
-                                    .background(Color.gray)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                                    .shadow(radius: 2)
+                                    VStack{
+                                        
+                                        Text("\(category)")
+                                        
+                                        ScrollView(showsIndicators: false) {
+                                            LazyVGrid(columns: gridItem, spacing: 10) {
+                                                ForEach(0...20, id: \.self) { i in
+                                                    
+                                                    Text("\(i)")
+                                                        .frame(width: imageWidth, height: imageHeight)
+                                                    
+                                                        .background(Color.gray)
+                                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                                        .shadow(radius: 2)
+                                                    
+                                                }
+                                            }
+                                            .frame(minHeight: geometry.size.height)
+                                            
+                                            
+                                            Text(selCate)
+                                                .padding(.top)
+                                        }
+                                        .frame(width: geometry.size.width)
+                                    }
                                     
+                                    
+                                }
+                                
                             }
+                            .scrollTargetLayout()
+                            
+                            
                         }
-                        .frame(minHeight: geometry.size.height)
+                        //上のscrollTargetLayout()でターゲットとした部分からスクロールをどのようにするかを指定することができる
+                        //pagingは,ticktokなどのようなスクロール画面を実現できる
+                        //viewAlignedはスクロール位置を細かく指定できる
+                        //またこのとき、LazyStackのspacingは0で設定することがコツ
+                        .scrollTargetBehavior(.paging)
+                        .scrollPosition(id: $selectedCategory)
                         
                         
-                        Text(selCate)
-                            .padding(.top)
                     }
-                    .frame(width: geometry.size.width)
+                    
+                    
+                    
                 }
                 .padding(.horizontal)
             }
+                
         }
     }
     
