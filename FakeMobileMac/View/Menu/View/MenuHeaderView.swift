@@ -65,6 +65,8 @@ struct MenuHeaderView: View {
                                         .foregroundColor(.clear)
                                 }
                             }
+                            //id付けでうまく動作する
+                            .id(category)
                             .onTapGesture {
                                 withAnimation {
                                     self.selectedCategory = category
@@ -76,21 +78,19 @@ struct MenuHeaderView: View {
                             
                             
                         }
-                       
+                        
                     }
                     
                 }
                 .frame(height: 25)
                 .onChange(of: selectedCategory) {
-                    withAnimation{
-                        print("変更された:\(selectedCategory)")
+                    withAnimation {
                         value.scrollTo(selectedCategory, anchor: .center)
-                        print("完了")
                     }
                 }
                 
                 
-
+                
             }
             
         }//Vstack
